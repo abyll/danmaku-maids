@@ -11,7 +11,6 @@ public class PlayerAim : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		var pos = new Vector3(Input.GetAxis("HorizontalAim"), Input.GetAxis("VerticalAim"), 0.0f);
-		transform.GetChild(0).localPosition = pos;
-		Debug.Log (pos);
+		transform.FindChild("Aim").localPosition = pos;
 	}
 }
