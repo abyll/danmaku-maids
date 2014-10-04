@@ -1,0 +1,8 @@
+Library/
+Temp/
+*_Data/
+*.exe
+Assembly*
+*.sln
+*.userprefs
+*.*proj
