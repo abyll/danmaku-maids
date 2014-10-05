@@ -7,8 +7,12 @@ public class DefaultShot : MonoBehaviour {
 	public bool player = false;
 	public ShotType type = ShotType.None;
 	public float speed = 0.1f;
-	// Use this for initialization
+
 	void Start () {
+		// These are necessary for collisions to actually trigger
+		gameObject.rigidbody2D.isKinematic = false;
+		gameObject.collider2D.isTrigger = true;
+
 		int layer=14; // Unity's UserLayers
 		switch (type) {
 		case ShotType.Gunk:
@@ -23,12 +27,13 @@ public class DefaultShot : MonoBehaviour {
 		}
 		gameObject.layer = layer;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
+		// Basic movement example. This is/should be replaced by proper movement scripts
 		transform.Translate (0,speed,0);
 	}
 
+	// 2D Trigger collision - isTrigger and non-kinematic
 	void OnTriggerEnter2D(Collider2D col) {
 		if (player && col.gameObject.CompareTag("Player"))
 			return;
