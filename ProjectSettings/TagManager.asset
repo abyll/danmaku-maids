@@ -14,11 +14,11 @@ TagManager:
   Builtin Layer 7: 
   User Layer 8: Enemy
   User Layer 9: Player
-  User Layer 10: ShotWater
-  User Layer 11: ShotFire
+  User Layer 10: Furniture
+  User Layer 11: ShotGunk
   User Layer 12: ShotDirt
-  User Layer 13: ShotGunk
-  User Layer 14: ShotElectric
+  User Layer 13: ShotMetal
+  User Layer 14: ShotDefault
   User Layer 15: 
   User Layer 16: 
   User Layer 17: 
