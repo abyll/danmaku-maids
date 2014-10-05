@@ -1,11 +1,15 @@
 fileFormatVersion: 2
-guid: 7cf17ff71f6a4914e81264309bd45ae3
+guid: cd9c79523db2bf64b954ccb3437c49b0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: spritesheet_0
-    21300002: spritesheet_1
-    21300004: spritesheet_2
-    21300006: spritesheet_3
+    21300000: vacuum_mk1_spritesheet_0
+    21300002: vacuum_mk1_spritesheet_1
+    21300004: vacuum_mk1_spritesheet_2
+    21300006: vacuum_mk1_spritesheet_3
+    21300008: vacuum_mk1_spritesheet_4
+    21300010: vacuum_mk1_spritesheet_5
+    21300012: vacuum_mk1_spritesheet_6
+    21300014: vacuum_mk1_spritesheet_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -47,7 +51,47 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: spritesheet_0
+    - name: vacuum_mk1_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vacuum_mk1_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vacuum_mk1_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vacuum_mk1_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vacuum_mk1_spritesheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -57,7 +101,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spritesheet_1
+    - name: vacuum_mk1_spritesheet_5
       rect:
         serializedVersion: 2
         x: 32
@@ -67,7 +111,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spritesheet_2
+    - name: vacuum_mk1_spritesheet_6
       rect:
         serializedVersion: 2
         x: 64
@@ -77,7 +121,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spritesheet_3
+    - name: vacuum_mk1_spritesheet_7
       rect:
         serializedVersion: 2
         x: 96

@@ -5,6 +5,7 @@ public class Roomba : MonoBehaviour {
 	Animator anim;
 	GameObject chase;
 	public float speed = .03f;
+	public int frameMod = 1;
 	float numFrames = 0;
 	float myAngle = 90f;
 	Vector2 Vel;
@@ -23,14 +24,14 @@ public class Roomba : MonoBehaviour {
 			}
 			else
 			{
-				myAngle = ((myAngle+1f)%360);
+				myAngle = ((myAngle+frameMod)%360);
 			}
 		}
 		else
 		{
 			this.transform.Translate(Vel);
 		}
-		Debug.Log ("My Angle: " + myAngle + ", target angle: " + getAngle () + ", frames remaining: " + numFrames);
+		//Debug.Log ("My Angle: " + myAngle + ", target angle: " + getAngle () + ", frames remaining: " + numFrames);
 		numFrames--;
 		setAnim ();
 	}

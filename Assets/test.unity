@@ -393,3 +393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy1: {fileID: 100000, guid: c8f163c7763b4b548b168250d6158151, type: 2}
+  svacuum1: {fileID: 100000, guid: 8c85bf2285a2e4742847ecf8338be80b, type: 2}
+  svacuum2: {fileID: 100000, guid: cc14b82f09017d243be50a3c30a2629e, type: 2}
+  llamp: {fileID: 100000, guid: 164c1f743f6897548b941c2bf7d26165, type: 2}
+  rlamp: {fileID: 100000, guid: 9dda1e7f5899d624485cfbdf40eca43e, type: 2}
+  boss: {fileID: 100000, guid: 8e03eac97bb6f8e4597dcb0f561d8d26, type: 2}
