@@ -9,14 +9,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 95: {fileID: 9500000}
   - 114: {fileID: 11400000}
-  - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
+  - 58: {fileID: 5800000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400004}
-  m_Layer: 8
-  m_Name: Roomboss
+  m_Layer: 14
+  m_Name: SlowShot
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: .0588130951, y: 1.34341276, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,36 +43,21 @@ Rigidbody2D:
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6100000
-BoxCollider2D:
+--- !u!58 &5800000
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
+  m_IsTrigger: 1
+  m_Radius: .0799999982
   m_Center: {x: 0, y: 0}
---- !u!95 &9500000
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 22fff34e85e6fae45af7c5987529c61c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,12 +66,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fca9d3a924d3c854ab0198d75ffbcc66, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9468044822cee4b83e475618d59dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 100000, guid: 52da4520893ce8e40b88c15c05cfc14f, type: 2}
-  speed: .0599999987
-  frameMod: 5
+  player: 0
+  type: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,22 +79,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7252bf1079ea940408266615a7f5b1aa, type: 3}
+  m_Script: {fileID: 11500000, guid: 54636ff071b3a1948b0cd2f91f2ac17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 357c35c9fd308994a9eeef942f3fd226, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 100000, guid: bacf1e9081fb2dc488e5359884d0c658, type: 2}
+  speed: .0500000007
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -132,8 +102,8 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9b128e7bfb7b98340b208fbbb3e5177a, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300014, guid: 5cd8e512273f9cd46834b4174db2d968, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

@@ -34,6 +34,8 @@ public class DefaultShot : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col) {
 		if (player && col.gameObject.CompareTag("Player"))
 			return;
+		if (!player && col.gameObject.CompareTag ("Enemy"))
+			return;
 		col.gameObject.SendMessage("Hit");
 		Destroy(gameObject);
 	}
