@@ -8,7 +8,7 @@ public class PlayerFiring : MonoBehaviour {
 	private int selectedIndex = 0;
 	private GameObject WeaponHUD;
 	// Use this for initialization
-	void Start () {
+	void OnLevelWasLoaded(int lvl) {
 		WeaponHUD = GameObject.FindGameObjectWithTag("WeaponHUD");
 		for(int i=0; i<weapons.Length; ++i) {
 			GameObject wpn = (GameObject)Instantiate(weapons[i], weaponHolder.position, weaponHolder.rotation);
@@ -47,6 +47,7 @@ public class PlayerFiring : MonoBehaviour {
 			selectedweapon.gameObject.SetActive(true);
 			Debug.Log(selectedweapon.gameObject);
 			selectedIndex = wpn;
+			WeaponHUD.SendMessage("Active", wpn);
 		}
 	}
 }
