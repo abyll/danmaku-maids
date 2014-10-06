@@ -226,6 +226,7 @@ GameObject:
   - 114: {fileID: 1572533598}
   - 50: {fileID: 1572533599}
   - 61: {fileID: 1572533600}
+  - 114: {fileID: 1572533601}
   m_Layer: 9
   m_Name: PC
   m_TagString: Player
@@ -336,6 +337,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .100000001, y: .100000001}
   m_Center: {x: 0, y: 0}
+--- !u!114 &1572533601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572533593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517eb875fe14927458aa92457338f337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1703930217
 GameObject:
   m_ObjectHideFlags: 0
