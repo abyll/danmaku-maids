@@ -5,6 +5,7 @@ using System.Collections;
 public class Broom : Weapon {
 	public GameObject shot;
 	public float firerate = 0.2f; // Time in seconds between shots
+	public Sprite icon;
 	private float nextShot = 0;
 	private Transform shotContainer;
 

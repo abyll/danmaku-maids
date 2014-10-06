@@ -6,7 +6,6 @@ public class DefaultShot : MonoBehaviour {
 	public enum ShotType {Gunk,Dirt,Metal, None};
 	public bool player = false;
 	public ShotType type = ShotType.None;
-	public float speed = 0.1f;
 
 	void Start () {
 		// These are necessary for collisions to actually trigger
@@ -29,8 +28,6 @@ public class DefaultShot : MonoBehaviour {
 	}
 
 	void Update () {
-		// Basic movement example. This is/should be replaced by proper movement scripts
-		transform.Translate (0,speed,0);
 	}
 
 	// 2D Trigger collision - isTrigger and non-kinematic
