@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 153487b5fda2a6e4f839e8d0992c9dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
-  invincible_time: 3
+  lives: 6
+  invincible_time: 7
   spawn: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
