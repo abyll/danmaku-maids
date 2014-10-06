@@ -70,7 +70,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: 0
   type: 1
-  speed: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
