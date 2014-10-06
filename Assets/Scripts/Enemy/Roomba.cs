@@ -4,12 +4,15 @@ using System.Collections;
 public class Roomba : MonoBehaviour {
 	Animator anim;
 	GameObject chase;
+	public GameObject bullet;
 	public float speed = .03f;
 	public int frameMod = 1;
+	int shotcd = 30;
 	float numFrames = 0;
 	float myAngle = 90f;
 	Vector2 Vel;
 	// Use this for initialization
+	private Transform shotContainer;
 	void Start () {
 		anim = this.GetComponent<Animator>();
 		chase = GameObject.FindGameObjectWithTag ("Player");
@@ -17,6 +20,7 @@ public class Roomba : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if(numFrames <= 0){
 			if(Mathf.Abs (getAngle ()-myAngle) <= 15){
 				SetChase ();
@@ -34,6 +38,28 @@ public class Roomba : MonoBehaviour {
 		//Debug.Log ("My Angle: " + myAngle + ", target angle: " + getAngle () + ", frames remaining: " + numFrames);
 		numFrames--;
 		setAnim ();
+		if(shotcd == 0){
+			shotcd = 30;
+			GameObject newBullet = (GameObject)Instantiate (bullet, transform.position, transform.rotation);
+			newBullet.transform.Rotate (Vector3.forward*(myAngle+45));
+			newBullet.transform.Translate (0, 0.4f, 0);
+			newBullet.transform.parent = shotContainer;
+			GameObject newBullet2 = (GameObject)Instantiate (bullet, transform.position, transform.rotation);
+			newBullet2.transform.Rotate (Vector3.forward*(myAngle+135));
+			newBullet2.transform.Translate (0, 0.4f, 0);
+			newBullet2.transform.parent = shotContainer;
+			GameObject newBullet3 = (GameObject)Instantiate (bullet, transform.position, transform.rotation);
+			newBullet3.transform.Rotate (Vector3.forward*(myAngle+225));
+			newBullet3.transform.Translate (0, 0.4f, 0);
+			newBullet3.transform.parent = shotContainer;
+			GameObject newBullet4 = (GameObject)Instantiate (bullet, transform.position, transform.rotation);
+			newBullet4.transform.Rotate (Vector3.forward*(myAngle+315));
+			newBullet4.transform.Translate (0, 0.4f, 0);
+			newBullet4.transform.parent = shotContainer;
+		}
+		else{
+			shotcd--;
+		}
 	}
 
 	void SetChase(){

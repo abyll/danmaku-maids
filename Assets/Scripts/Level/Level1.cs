@@ -5,7 +5,9 @@ public class Level1 : MonoBehaviour {
 	public GameObject enemy1;
 	public GameObject svacuum1;
 	public GameObject svacuum2;
+	public GameObject tllamp;
 	public GameObject llamp;
+	public GameObject trlamp;
 	public GameObject rlamp;
 	public GameObject boss;
 	// Use this for initialization
@@ -56,18 +58,18 @@ public class Level1 : MonoBehaviour {
 	}
 	IEnumerator AddLamps(){
 		yield return new WaitForSeconds(10);
-		makeNewEnemy (rlamp, 6.5f, 1.5f);
-		makeNewEnemy (llamp, -6.5f, 1.5f);
+		makeNewEnemy (trlamp, 6.5f, 1.5f);
+		makeNewEnemy (tllamp, -6.5f, 1.5f);
 		makeNewEnemy (rlamp, 6.5f, -3f);
 		makeNewEnemy (llamp, -6.5f, -3f);
 		yield return new WaitForSeconds(45);
-		makeNewEnemy (rlamp, 6.5f, 1.5f);
-		makeNewEnemy (llamp, -6.5f, 1.5f);
+		makeNewEnemy (trlamp, 6.5f, 1.5f);
+		makeNewEnemy (tllamp, -6.5f, 1.5f);
 		makeNewEnemy (rlamp, 6.5f, -3f);
 		makeNewEnemy (llamp, -6.5f, -3f);
 		yield return new WaitForSeconds(80);
-		makeNewEnemy (rlamp, 6.5f, 1.5f);
-		makeNewEnemy (llamp, -6.5f, 1.5f);
+		makeNewEnemy (trlamp, 6.5f, 1.5f);
+		makeNewEnemy (tllamp, -6.5f, 1.5f);
 		makeNewEnemy (rlamp, 6.5f, -3f);
 		makeNewEnemy (llamp, -6.5f, -3f);
 	}

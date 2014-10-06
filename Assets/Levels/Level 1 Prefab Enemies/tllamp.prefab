@@ -9,14 +9,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 95: {fileID: 9500000}
-  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
-  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
   - 114: {fileID: 11400004}
   m_Layer: 8
-  m_Name: Vacuum Cleaner 1
+  m_Name: tllamp
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,40 +57,9 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .200000003, y: .409999996}
+  m_Size: {x: .200000003, y: .600000024}
   m_Center: {x: 0, y: 0}
---- !u!95 &9500000
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5e378db81cdb63e4aa5311d366c19a80, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c371d7f4bd9d5df4fa720e0374052277, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xTrans: .00999999978
-  yTrans: 0
-  radadjust: 0
-  present: 0
-  diameter: 1
---- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,7 +70,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7252bf1079ea940408266615a7f5b1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 30
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d8bd49195f0c2248bea396cf30dfdab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dist: 1.5
+  time: 30
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -111,10 +92,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f467587ad67aa9747a342639524a3669, type: 3}
+  m_Script: {fileID: 11500000, guid: f409b972121be214cb107af48ece03c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 100000, guid: fe8a495a93e35414aa584b5183b4df36, type: 2}
+  bullet: {fileID: 100000, guid: 8e228450b6f27d8469813cdf6fb788e8, type: 2}
+  angle: 135
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -135,7 +117,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cd9c79523db2bf64b954ccb3437c49b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e215e88b0e70294f9e65afe8ec8dc8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
